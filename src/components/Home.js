@@ -8,7 +8,7 @@ function Home() {
   const { data } = context
   return (
     <>
-      <div className='grid grid-cols-3 m-10'>
+      <div className='grid grid-cols-1 lg:grid-cols-3 m-10'>
         {data.map((element) => {
           return <div className='m-3 p-4 rounded overflow-hidden shadow-lg' key={element.show.id}>
             <Item className="" id={element.show.id} image={element.show.image.medium} premiered={element.show.premiered} name={element.show.name} url={element.show.url} summary={element.show.summary} days={element.show.schedule.days} time={element.show.schedule.time} runtime={element.show.runtime} genres={element.show.genres} />

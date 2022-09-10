@@ -23,11 +23,9 @@ function Item(props) {
                     <h3 className='mt-3 font-medium font-serif text-base'>{(props.genres).toString()}</h3>
                 </div>
                 <div className='mt-4'>
-                    <Link to={`/details`} onClick={handleClick} id={props.id} className='bg-blue-500 hover:bg-blue-700 text-white font-bold p-2 rounded' href="">Show Details</Link>
+                    <Link to={`/details`} onClick={handleClick} id={props.id} className='bg-blue-500 hover:bg-blue-700 text-white textxs font-bold p-2 rounded' href="">Show Details</Link>
                 </div>
-                {/* <div className='mt-4 text-xs font-medium font-sans lg:text-sm'>
-                    {(props.summary).replace('<p>',' ').replace('<b>',' ').replace('</b>','').replace('</p>','')}
-                </div> */}
+    
         </>
     )
 }

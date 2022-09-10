@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 const ApiState = (props) => {
     const [data, setData] = useState([]);
-    let value={"error":"not found"}
+    const [value, setvalue] = useState([])
     useEffect(() => {
         fetch(`https://api.tvmaze.com/search/shows?q=all`)
             .then((response) => response.json())
@@ -13,7 +13,7 @@ const ApiState = (props) => {
         for (let index = 0; index < data.length; index++) {
             const ele = data[index];
             if(parseInt(ele.show.id)===parseInt(id)){
-                value=ele
+                setvalue(ele)
             }
 
             
